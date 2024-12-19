@@ -381,3 +381,4 @@ wsproto
 xxhash
 yarl
 zipp
+pywin32; platform_system == "Windows"
