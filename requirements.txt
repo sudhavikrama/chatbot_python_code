@@ -266,8 +266,6 @@ python-json-logger
 python-multipart
 python-socketio
 pytz
-pywin32
-pywinpty
 pyxnat
 PyYAML
 pyzmq
@@ -381,4 +379,4 @@ wsproto
 xxhash
 yarl
 zipp
-pywin32; platform_system == "Windows"
+
