@@ -95,7 +95,7 @@ app = Flask(__name__)
 CORS(app)
 @app.route('/demo', methods=['GET'])
 def testfunc():
-    return "Hello my chatbot"
+    return jsonify({"data": "success"}), 200
 
 # Specify search query, retrieve relevant documents, and convert to string
 @app.route('/query', methods=['POST'])
