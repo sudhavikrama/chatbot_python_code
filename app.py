@@ -93,9 +93,10 @@ db = cli['rag_db3']
 chat_collection = db['chat_history']
 app = Flask(__name__)
 CORS(app)
-@app.route('/demo', methods=['GET'])
+
+@app.route('/first', methods=['GET'])
 def testfunc():
-    return "hello"
+    return "hello my page"
 
 # Specify search query, retrieve relevant documents, and convert to string
 @app.route('/query', methods=['POST'])
