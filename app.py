@@ -1,4 +1,4 @@
-#final code part-1##
+#final code
 from sentence_transformers import SentenceTransformer
 # Load the embedding model
 model = SentenceTransformer("nli-roberta-large", trust_remote_code=True)
@@ -94,6 +94,9 @@ chat_collection = db['chat_history']
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
+def home():
+    return "Welcome to the Flask Application!"
 # Specify search query, retrieve relevant documents, and convert to string
 @app.route('/query', methods=['POST'])
 def search_data():
