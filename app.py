@@ -94,10 +94,6 @@ chat_collection = db['chat_history']
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/first', methods=['GET'])
-def testfunc():
-    return "hello my page"
-
 # Specify search query, retrieve relevant documents, and convert to string
 @app.route('/query', methods=['POST'])
 def search_data():
